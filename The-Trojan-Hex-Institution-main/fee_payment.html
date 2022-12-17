@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Payment</title>
+    <link rel="stylesheet" href="fee_payment.css">
+</head>
+<body>
+    <header class="user">
+        <div>
+            <img id="profile" src="images/icon.jpg" alt="">
+            <h1 class="name">Student Name</h1>
+            <!-- <p class="post">Front-End Developer</p>     -->
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a  href="my_profile.html">My Profile</a></li>
+                <li><a href="attendence.html">Attendence</a></li>
+                <li><a href="schedules.html">Schedules</a></li>
+                <li><a  href="study_material.html">Study Material</a></li>
+                <li><a href="quiz_game.html">Quiz Game</a></li>
+                <li><a class="active" href="fee_payment.html">Fee Payment</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <div id="menu" class="fas fa-bars"></div>
+        <div id="cancel" class="fas fa-times"></div>
+    </label>
+
+    
+        <nav class="student_dashboard">
+            <h2>STUDENT DASHBOARD</h2>
+            <img class="notification" src="images/bell.svg" alt="">
+            <h4><a href="Student_login.html">Log Out</a></h4>
+        </nav>
+
+    
+        <div class="container">
+            <form action="">
+            
+            <h1 class="main_heading">Payment Form</h1>
+            <hr>
+            <hr>
+            <p>Required Fields are followed by * </p>
+            <h2>Contact Information</h2>
+            
+            <p>FirstName :* <input type="text" name="name" required></p>   
+            <p>LastName : <input type="text" name="name" required></p>
+    
+            <fieldset>
+                <legend>Gender</legend>
+            <p>Male <input type="radio" name="Gender" id="Male"></p>
+            <p>Female <input type="radio" name="Gender" id="Female"></p>
+            <p>Transgender <input type="radio" name="Gender" id="Others"></p>
+            </fieldset> 
+            <p>Class :*
+                <select name="class" id="class" required>
+                    <option value="">-- select class --</option>
+                    <option value="Class I">Class I</option>
+                    <option value="Class II ">Class II</option>
+                    <option value="Class III ">Class III</option>
+                    <option value="Class IV"> ClassIV</option>
+                    <option value="Class V ">Class V</option>
+                    <option value="Class VI ">Class VI</option>
+                    <option value="Class VII ">Class VII</option>
+                    <option value="Class VIII">Class VIII</option>
+                    <option value="Class IX">Class IX</option>
+                    <option value="Class X">Class X</option>
+                    <option value="Class XI ">Class XI</option>
+                    <option value="Class XII ">Class XII </option>
+    
+    
+                </select>
+            </p>
+            <p>Address: <textarea name="Address" id="Address" cols="100" rows="10"></textarea></p>
+            <p>Email: * <input type="email" name="email" id="email" required></p>
+            <p>Pincode : *<input type="number" name="Pincode" id="Pincode" required></p>
+            <h2>Payment Information</h2>>
+            
+            <p>Card Type :*
+                <select name="card_type" id="card_type" required>
+                    <option value="">-- select a card type --</option>
+                    <option value="Visa">Visa</option>
+                    <option value ="Mastercard">Mastercard</option>
+                    <option value ="Rupay">Rupay</option>
+                </select>
+            </p>
+            <p>
+                Card Number : *<input type="number" name="Card_Number " id="Card Number" required>
+            </p>
+            <p>
+                Expiry Date : *<input type="date" name="expiry_date" id="expiry_date" required>
+            </p>
+            <p>
+                CVV :* <input type="password" name="CVV" id="CVV">
+            </p>
+            <p>
+                Amount :* <input type="number" name="amount" id="amount">
+            </p>
+            <button type="button" class="submit-btn">PAY NOW</button>
+    
+    
+    
+            </form>
+        </div>
+    
+</body>
+</html>

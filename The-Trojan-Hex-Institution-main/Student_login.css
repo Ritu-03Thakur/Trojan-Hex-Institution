@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Libre+Bodoni:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: rgb(241, 245, 245);
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.logo{
+    height: 80px;
+    width: 100px;
+}
+.title{
+     /* text-align: center;
+    align-items: center; */
+    display: flex;
+    justify-content: center;
+    margin: -55px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Beau Rivage', cursive;
+    font-family: 'Libre Bodoni', serif;
+}
+.attendence{
+    border: 1px solid grey;
+    margin: 100px 470px 30px 470px;
+    /* margin-left: 400px;
+    margin-right: 400px; */
+    font-size: large;
+    height: 370px;
+    background-color: white;
+    
+    
+}
+.attendence .upper{
+    background-color: rgb(2, 2, 51);
+    height: 80px;
+    border-bottom: 1px solid black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    font-weight: 800;
+}
+.attendence .upper h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.attendence .lower{
+    padding: 20px;
+}
+.attendence .lower h3{
+    color:black;
+
+}
+#username , #password{
+    width: 380px;
+    height: 32px;
+}
+#username{
+    margin-bottom: 20px;
+}
+#remember_me{
+    margin-top: 10px;
+}
+button{
+    width: 380px;
+    height: 40px;
+    /* list-style: none; */
+    /* text-align: center; */
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 18px;
+    font-size: 20px;
+    background-color: rgb(115, 115, 243);
+    align-items: center;
+    margin-top: 20px;
+    /* margin-left: 90px; */
+    /* display: flex;
+    justify-content: center; */
+}
+button:hover{
+    text-decoration: none;
+    
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button a:hover{
+    color: black;
+}

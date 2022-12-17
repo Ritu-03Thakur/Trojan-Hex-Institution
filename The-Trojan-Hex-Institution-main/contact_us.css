@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+body{
+    background:white;
+    overflow-x: hidden;
+    padding-left: 17rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 17rem;
+    background:lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+}
+#profile{
+    height: 9rem;
+    
+    width: 9rem;
+    border-radius: 50%;
+    /* -webkit-transform-origin-y: -200px; */
+    object-fit: cover;
+    margin-bottom: 200px;
+    /* object-fit:unset; */
+    background-color: white;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--yellow);
+}
+.name{
+    margin-bottom: 10px;
+}
+#check{
+    display: none;
+}
+nav ul{
+    list-style: none;
+    margin-top: 10px;
+    
+}
+nav ul li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
+
+}
+nav ul li a{
+    background-color: rgb(59, 59, 241);
+    /* margin: 10px; */
+    padding: 12px 60px;
+    display: block;
+    font-weight: 400;
+    color: white;
+    border-radius: 30px;
+    /* padding: 12px; */
+}
+nav ul li a:hover{
+    background-color: black;
+    /* font-display: black; */
+}
+.active{
+    background-color: black;
+}
+
+/* section- student info starts */
+/* .my_profile{
+    margin: 0px;
+    padding: 0px;
+} */
+.student_dashboard{
+    background-color: rgb(2, 2, 51);
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.notification{
+    float: right;
+    margin-left: 630px;
+    background-color: white;
+    border-radius: 50%;
+    /* margin-right: -100px; */
+}
+.notification:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+.student_dashboard h4{
+    /* text-align: end; */
+    /* float: right; */
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding: 5px 3px; 
+}
+.student_dashboard h4:hover{
+    background-color: lightgray;
+}
+.student_dashboard h2{
+    padding-top: 17px;
+    color: beige;
+    padding-left: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.heading{
+    text-align: center;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-bottom: 1px solid black;
+}
+.contact .row{
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content:end;
+    flex-wrap: wrap;
+}
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom: 4rem;
+    text-decoration-color: black;
+}
+.contact .row form .box{
+    padding:5px;
+    margin:6px 0;
+    background:#3333;
+    color:black;
+    text-transform: none;
+    font-size: 1.2rem;
+    width:100%;
+}
+
+.contact .row form .box_message{
+    resize: none;
+    height: 8rem;
+    width: 970px;
+    background:#3333;
+    color:black;
+    font-size: 1.2rem;
+    margin-top: 15px;
+
+}
+button{
+    margin-top: 20px;
+    padding: 12px 15px;
+    margin-left: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration-color: green;
+
+}
+.social{
+    height: 70px;
+    width: 70px;
+    margin:50px;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 2px;
+}
+.social-handles{
+    margin-left: 160px;
+    margin-top: -120px;
+}

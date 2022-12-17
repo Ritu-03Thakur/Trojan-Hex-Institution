@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz_game.css">
+</head>
+<body>
+    <header class="user">
+        <div>
+            <img id="profile" src="images/icon.jpg" alt="">
+            <h1 class="name">Student Name</h1>
+            <!-- <p class="post">Front-End Developer</p>     -->
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a  href="my_profile.html">My Profile</a></li>
+                <li><a href="attendence.html">Attendence</a></li>
+                <li><a href="schedules.html">Schedules</a></li>
+                <li><a  href="study_material.html">Study Material</a></li>
+                <li><a class="active" href="quiz_game.html">Quiz Game</a></li>
+                <li><a href="fee_payment.html">Fee Payment</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <div id="menu" class="fas fa-bars"></div>
+        <div id="cancel" class="fas fa-times"></div>
+    </label>
+
+    
+        <nav class="student_dashboard">
+            <h2>STUDENT DASHBOARD</h2>
+            <img class="notification" src="images/bell.svg" alt="">
+            <h4><a href="Student_login.html">Log Out</a></h4>
+        </nav>
+
+
+    <section class="game_starts">
+        <div class="start_btn"><button>Start Quiz</button></div>
+
+        <div class="info_box">
+            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+            <div class="info-list">
+                <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                <div class="info">2. Once you select your answer, it can't be undone.</div>
+                <div class="info">3. You can't select any option once time goes off.</div>
+                <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+                <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+        <div class="quiz_box">
+            <header>
+                <div class="title">TROJAN HEX QUIZ</div>
+                <div class="timer">
+                    <div class="time_left_txt">TIME LEFT</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text">
+                </div>
+                <div class="option_list">
+                </div>
+            </section>
+            <footer>
+                <div class="total_que">
+                </div>
+                <button class="next_btn">Next Que</button>
+            </footer>
+        </div>
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text">
+               
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+    </section>
+    <script src="quiz_game.js"></script>
+</body>
+</html>

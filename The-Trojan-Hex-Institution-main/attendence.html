@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence Page</title>
+    <link rel="stylesheet" href="attendence.css">
+</head>
+<body>
+    <header class="user">
+        <div>
+            <img id="profile" src="images/icon.jpg" alt="">
+            <h1 class="name">Student Name</h1>
+            <!-- <p class="post">Front-End Developer</p>     -->
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a  href="my_profile.html">My Profile</a></li>
+                <li><a class="active" href="#attendence">Attendence</a></li>
+                <li><a href="schedules.html">Schedules</a></li>
+                <li><a href="study_material.html">Study Material</a></li>
+                <li><a href="quiz_game.html">Quiz Game</a></li>
+                <li><a href="fee_payment.html">Fee Payment</a></li>
+                <li><a href="contact_us.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <div id="menu" class="fas fa-bars"></div>
+        <div id="cancel" class="fas fa-times"></div>
+    </label>
+
+    <section class="my_profile">
+        <nav class="student_dashboard">
+            <h2>STUDENT DASHBOARD</h2>
+            <img class="notification" src="images/bell.svg" alt="">
+            <h4><a href="Student_login.html">Log Out</a></h4>
+        </nav>
+
+
+    <section>
+        <h2 class="heading">Attendence</h2>
+
+
+        <div class="content" id="content">
+            <ul class="physics">
+                <li id="physics">Physics</li>
+                <li>Total Classes: <span>10</span>  </li>
+                <li>Attended: <span>4</span></li>
+                <li>Absent: <span>6</span></li>
+                <li><Leave:span>0</Leave:span></li>
+                
+                    <pre class="square">
+                        <img src="images/red square.jpeg" id="squares" class="red_square" alt=""><span class="leave_text">Leave</span>
+                        <img src="images/yellow square.png"  id="squares" class="yellow_square"  alt=""><span class="leave_text">Absent</span>
+                        <img src="images/light blue square.jpg" id="squares" class="blue_square" alt=""><span class="leave_text">Present</span>
+                    </pre>
+                
+                
+                <div class="piechart" id="p1"></div>
+            </ul>
+            <ul class="maths">
+                <li id="maths">Maths</li>
+                <li>Total Classes: <span>10</span></li>
+                <li>Attended: <span>7</span></li>
+                <li><Absent:span>2</Absent:span></li>
+                <li>Leave: <span>1</span></li>
+                <pre class="square">
+                    <img src="images/red square.jpeg" id="squares" class="red_square" alt=""><span class="leave_text">Leave</span>
+                    <img src="images/yellow square.png"  id="squares" class="yellow_square"  alt=""><span class="leave_text">Absent</span>
+                    <img src="images/light blue square.jpg" id="squares" class="blue_square" alt=""><span class="leave_text">Present</span>
+                </pre>
+                <div class="piechart_maths"></div>
+        
+            </ul>
+            <ul class="cs">
+                <li id="cs">Computer Science</li>
+                <li>Total Classes: <span>10</span></li>
+                <li>Attended: <span>9</span></li>
+                <li><Absent:span>0</Absent:span></li>
+                <li>Leave: <span>1</span></li>
+                <pre class="square">
+                    <img src="images/red square.jpeg" id="squares" class="red_square" alt=""><span class="leave_text">Leave</span>
+                    <img src="images/yellow square.png"  id="squares" class="yellow_square"  alt=""><span class="leave_text">Absent</span>
+                    <img src="images/light blue square.jpg" id="squares" class="blue_square" alt=""><span class="leave_text">Present</span>
+                </pre>
+                <div id="yug"></div>
+        
+            </ul>
+            <!-- <ul class="chemistry">
+                <li id="chemistry">Chemistry</li>
+                <li>Total Classes </li>
+                <li>Attended</li>
+                <li>Absent</li>
+                <li>Leave</li>
+                <div class="piechart"></div>
+        
+            </ul> -->
+            <!-- <ul class="mechanics">
+                <li id="mechanics">Mechanics</li>
+                <li>Total Classes </li>
+                <li>Attended</li>
+                <li>Absent</li>
+                <li>Leave</li>
+                <div class="piechart"></div>
+        
+            </ul> -->
+            <!-- <ul class="electrical">
+                <li id="electrical">Electrical</li>
+                <li>Total Classes </li>
+                <li>Attended</li>
+                <li>Absent</li>
+                <li>Leave</li>
+                <div class="piechart"></div>
+        
+            </ul> -->
+            <!-- <ul class="overall">
+                <li id="overall">Overall</li>
+                <li>Total Classes </li>
+                <li>Attended</li>
+                <li>Absent</li>
+                <li>Leave</li>
+                <div class="piechart" id="over"></div>
+        
+            </ul> -->
+        
+        </div>
+    </section>
+</body>
+</html>

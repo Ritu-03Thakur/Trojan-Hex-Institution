@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+body{
+    background:white;
+    overflow-x: hidden;
+    padding-left: 17rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 17rem;
+    background:lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+}
+#profile{
+    height: 9rem;
+    
+    width: 9rem;
+    border-radius: 50%;
+    /* -webkit-transform-origin-y: -200px; */
+    object-fit: cover;
+    margin-bottom: 200px;
+    /* object-fit:unset; */
+    background-color: white;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--yellow);
+}
+.name{
+    margin-bottom: 10px;
+}
+#check{
+    display: none;
+}
+nav ul{
+    list-style: none;
+    margin-top: 10px;
+    
+}
+nav ul li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
+
+}
+nav ul li a{
+    background-color: rgb(59, 59, 241);
+    /* margin: 10px; */
+    padding: 12px 60px;
+    display: block;
+    font-weight: 400;
+    color: white;
+    border-radius: 30px;
+    /* padding: 12px; */
+}
+nav ul li a:hover{
+    background-color: black;
+    /* font-display: black; */
+}
+.active{
+    background-color: black;
+}
+
+/* section- student info starts */
+/* .my_profile{
+    margin: 0px;
+    padding: 0px;
+} */
+.student_dashboard{
+    background-color: rgb(2, 2, 51);
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.notification{
+    float: right;
+    margin-left: 630px;
+    background-color: white;
+    border-radius: 50%;
+    /* margin-right: -100px; */
+}
+.notification:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+.student_dashboard h4{
+    /* text-align: end; */
+    /* float: right; */
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding: 5px 3px; 
+}
+.student_dashboard h4:hover{
+    background-color: lightgray;
+}
+.student_dashboard h2{
+    padding-top: 17px;
+    color: beige;
+    padding-left: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.heading{
+    text-align: center;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-bottom: 1px solid black;
+}
+
+
+/* contributed by ritu */
+/* .content{
+    /* background-color: blueviolet; */
+    /* display:flex; */
+/* }  */
+.physics
+{
+    background-color:lightgrey;
+    height: 138px;
+    /* position: relative; */
+    left: 312px;
+    border: 2px solid white;
+    padding: 10px 16px 11px 39px;
+    width: 400px;
+    margin-left: 38px;
+    margin-top: 20px;
+    font-size: 17px;
+    border-radius: 17px;
+    list-style: none;
+}
+#physics{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    font-style: oblique;
+}
+
+.maths
+{
+    background-color: lightgrey;
+    height: 138px;
+    border: 2px solid white;
+    padding: 10px 16px 11px 39px;
+    width: 400px;
+    /* position: relative; */
+    margin-left: 40px;
+    margin-top: 50px;
+    /* margin-left: 20px; */
+    font-size: 17px;
+    border-radius: 17px;
+    list-style: none;
+}
+#maths{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    font-style: oblique;
+}
+
+
+ .cs{
+   list-style: none; 
+   background-color: lightgrey;
+   height: 138px;
+   width: 400px;
+   border-radius: 17px;
+   padding: 10px 16px 11px 39px;
+   margin-top: 40px;
+   margin-right: 800px;
+   margin-left: 40px;
+ }  
+#cs{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px;
+} 
+.chemistry{
+    background-color: brown;
+    height: 118px;
+    border: 2px solid brown;
+    padding: 20px 16px 11px 39px;
+    width: 95px;
+    position: relative;
+    top : 197px;
+    left:307px;
+    font-size: 17px;
+    border-radius: 17px;
+    list-style: none;
+}
+#chemistry{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+}
+.mechanics{
+    background-color: brown;
+    height: 118px;
+    border: 2px solid brown;
+    padding: 20px 16px 11px 39px;
+    width: 95px;
+    position: relative;
+    top : 250px;
+    top: 372px;
+    right: 312px;
+    font-size: 17px;
+    border-radius: 17px;
+    list-style: none;
+}
+#mechanics{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+}
+.electrical{
+    background-color: brown;
+    height: 118px;
+    border: 2px solid brown;
+    padding: 20px 16px 11px 39px;
+    width: 95px;
+    position: relative;
+    top: 372px;
+    left: 6px;
+    font-size: 17px;
+    border-radius: 17px;
+    list-style: none;
+}
+#electrical{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+}
+.overall{
+    background-color: brown;
+    height: 118px;
+    border: 2px solid brown;
+    padding: 20px 16px 11px 39px;
+    width: 95px;
+    position: relative;
+    bottom:500px;
+    font-size: 17px;
+    border-radius: 17px;
+    list-style: none;
+}
+ .square{
+    width: 50px;
+    display: grid;
+    margin-left: 400px;
+    margin-top: -55px;
+    /* background-color: rgb(241, 150, 150); */
+
+ }  
+#squares{
+    display: inline-block;
+    height: 10px;
+    border: 1px solid black;
+    /* padding-bottom: 10px; */
+    /* margin-bottom: 10px; */
+    /* padding: 10px; */
+}
+.leave_text{
+    display: inline;
+    margin-left: 12px;
+    margin-top: -14px;
+}
+/* .red_square{
+    height: 10px;
+    width: 10px;
+    margin-top: -20px;
+}
+.yellow_square{
+    height: 10px;
+
+    width: 10px;
+}
+.blue_square{
+    height: 10px;
+    width: 10px;
+} */
+.piechart{
+    margin-top : 300px;
+    display:block;
+    /* position:relative; */
+    left: 172px;
+    top: -427px;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+    rgb(190, 9, 39) 70deg,
+    rgb(7, 179, 236) 0 235deg,
+    orange 0 );
+}
+.piechart_maths{
+    /* margin-top : 10px; */
+    display:block;
+    float: right;
+    margin-right: -585px;
+    margin-top: -130px;
+    /* position:relative; */
+    /* left: 172px; */
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+    rgb(190, 9, 39) 70deg,
+    rgb(7, 179, 236) 0 235deg,
+    orange 0 );
+}
+#yug{
+    display: block;
+    float: right;
+    width: 155px;
+    position: relative;
+    top: 401px;
+    left: 590px;
+    height: 155px;
+    border-radius: 50%;
+    /* margin-top: 4200px; */
+    margin-bottom: -4020px;
+    background-image: conic-gradient(
+    rgb(190, 9, 39) 70deg,
+    rgb(7, 179, 236) 0 235deg,
+    orange 0 );
+    margin-top: -500px;
+
+}
+ #p1{
+    position:relative;
+    left: 772px;
+    /* top: -427px; */
+} 
+.overall{
+    background-color: brown;
+    height: 118px;
+    border: 2px solid brown;
+    padding: 20px 16px 11px 39px;
+    width: 95px;
+    font-size: 17px;
+    position: relative;
+    top: 608px;
+    left: -477px;
+    border-radius: 17px;
+    list-style: none;
+}
+#over{
+    position: relative;
+    width: 205px;
+    height: 205px;
+   
+}

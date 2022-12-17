@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+body{
+    background:white;
+    overflow-x: hidden;
+    padding-left: 17rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 17rem;
+    background:lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+}
+#profile{
+    height: 9rem;
+    
+    width: 9rem;
+    border-radius: 50%;
+    /* -webkit-transform-origin-y: -200px; */
+    object-fit: cover;
+    margin-bottom: 200px;
+    /* object-fit:unset; */
+    background-color: white;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--yellow);
+}
+.name{
+    margin-bottom: 10px;
+}
+#check{
+    display: none;
+}
+nav ul{
+    list-style: none;
+    margin-top: 10px;
+    
+}
+nav ul li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
+
+}
+nav ul li a{
+    background-color: rgb(59, 59, 241);
+    /* margin: 10px; */
+    padding: 12px 60px;
+    display: block;
+    font-weight: 400;
+    color: white;
+    border-radius: 30px;
+    /* padding: 12px; */
+}
+nav ul li a:hover{
+    background-color: black;
+    /* font-display: black; */
+}
+.active{
+    background-color: black;
+}
+
+/* section- student info starts */
+/* .my_profile{
+    margin: 0px;
+    padding: 0px;
+} */
+.student_dashboard{
+    background-color: rgb(2, 2, 51);
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.notification{
+    float: right;
+    margin-left: 630px;
+    background-color: white;
+    border-radius: 50%;
+    /* margin-right: -100px; */
+}
+.notification:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+.student_dashboard h4{
+    /* text-align: end; */
+    /* float: right; */
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding: 5px 3px; 
+}
+.student_dashboard h4:hover{
+    background-color: lightgray;
+}
+.student_dashboard h2{
+    padding-top: 17px;
+    color: beige;
+    padding-left: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* main 
+form 
+starts from here... */
+
+.container {
+    background-color:whitesmoke;
+    padding: 5px 20px 15px 20px ;
+    border: 2px solid #ff105f;
+    border-color: linear-gradient(to right ,#ff105f ,#ffad06);
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid whitesmoke;
+    margin: 10px;
+}
+fieldset{
+    background-color: white;
+    border: 1px solid white;
+}
+.main_heading{
+    text-align: center;
+}
+
+.submit-btn{
+    background:  linear-gradient(to right,#ff105f ,#ffad06);
+    display: block;
+    padding: 12px 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+input[type="submit"]:hover{
+    color: red;
+}
